@@ -1,6 +1,9 @@
 package Laporan1PBO;
 
-import java.util.Scanner;
+import java.util.Scanner; // hilangkan IMPORT DECLARATION nya ini 
+
+// untuk tugas ini sepertinya cuma menampilkan BIODATA dan Aritmatika (beberapa model perhitungan)
+// tanpa harus menggunakan proses input, kata lain statis mi saja ..=)
 
 public class Laporan1 {
 
