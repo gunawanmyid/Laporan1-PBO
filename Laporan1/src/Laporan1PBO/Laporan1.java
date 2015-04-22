@@ -12,6 +12,7 @@ private static Scanner masukan = new Scanner(System.in);
 		float angka2;
 		float hasil;
 		int menu;
+		int kembali;
 		
 		System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n",
 				"                 Biodata                           ",
@@ -32,43 +33,54 @@ private static Scanner masukan = new Scanner(System.in);
 				+ " angka 1 sampai 5 untuk memilih operasi yang digunakan: ");
 		menu = masukan.nextInt();
 		
-		if (menu<1 || menu>5)
-			System.exit(0);
 		if (menu==1)
+		{	
 			System.out.print("masukkan angka pertama: ");
 			angka1 = masukan.nextFloat();
 			System.out.print("masukkan angka kedua: ");
 			angka2 = masukan.nextFloat();
 			hasil = angka1 + angka2;
 			System.out.printf("Hasil adalah %s ", hasil);
-		if (menu==2)
+		}
+		else if (menu==2)
+		{
 			System.out.print("masukkan angka pertama: ");
 			angka1 = masukan.nextFloat();
 			System.out.print("masukkan angka kedua: ");
 			angka2 = masukan.nextFloat();
 			hasil = angka1 - angka2;
 			System.out.printf("Hasil adalah %s ", hasil);
-		if (menu==3)
+		}
+		else if (menu==3)
+		{
 			System.out.print("masukkan angka pertama: ");
 			angka1 = masukan.nextFloat();
 			System.out.print("masukkan angka kedua: ");
 			angka2 = masukan.nextFloat();
 			hasil = angka1 * angka2;
 			System.out.printf("Hasil adalah %s ", hasil);
-		if (menu==4)
+		}
+		else if (menu==4)
+		{
 			System.out.print("masukkan angka pertama: ");
 			angka1 = masukan.nextFloat();
 			System.out.print("masukkan angka kedua: ");
 			angka2 = masukan.nextFloat();
 			hasil = angka1 + angka2;
 			System.out.printf("Hasil adalah %s ", hasil);
-		if (menu==5)
+		}
+		else if (menu==5)
+		{
 			System.out.print("masukkan angka pertama: ");
 			angka1 = masukan.nextFloat();
 			System.out.print("masukkan angka kedua: ");
 			angka2 = masukan.nextFloat();
 			hasil = angka1 % angka2;
 			System.out.printf("Hasil adalah %s ", hasil);
-		
+		}
+		else
+		{
+			System.exit(0);
+		}
 	}
 }
