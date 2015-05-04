@@ -8,7 +8,7 @@ private static Scanner masukan = new Scanner(System.in);
 
 	public static void main(String[] args){
 	
-		float angka1;
+		float angka1; // nama variabel angka1 dengan filetype float
 		float angka2;
 		float hasil;
 		int menu;
